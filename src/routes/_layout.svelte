@@ -1,12 +1,14 @@
 <script>
-	import Nav from '../components/Nav.svelte';
-	import Main from '../components/Main.svelte'
+  import Nav from "../components/Nav.svelte";
+  import Header from "../components/Header.svelte";
+  import Main from "../components/Main.svelte";
 
-	export let segment;
+  export let segment;
 </script>
 
-<Nav {segment}/>
+<Header />
+<Nav {segment} />
 
 <Main>
-	<slot></slot>
+  <slot />
 </Main>
