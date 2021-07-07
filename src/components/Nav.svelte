@@ -2,6 +2,65 @@
   export let segment;
 </script>
 
+<svelte:head>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/LineIcons.css" />
+  <link rel="stylesheet" href="assets/css/animate.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="assets/css/theme.css" />
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/wow.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+</svelte:head>
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      <a id="pramuimge-logo" title="Pramukh IME" href="."
+        ><img
+          src="assets/images/logo_white.png"
+          alt="Pramukh IME home page"
+        /></a
+      >
+    </div>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#main-nav-1"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" />
+    </button>
+    <div class="navbar-collapse collapse" id="main-nav-1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="." title="Blog" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="about" title="Blog" class="nav-link"> About </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact" title="Blog" class="nav-link"> Contact </a>
+        </li>
+        <li class="nav-item">
+          <a href="general" title="Blog" class="nav-link"> General </a>
+        </li>
+        <li class="nav-item">
+          <a rel="prefetch" href="blog" title="Blog" class="nav-link"> Blog </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
 <nav>
   <ul>
     <li>
@@ -43,47 +102,4 @@
 </nav>
 
 <style>
-  nav {
-    border-bottom: 1px solid rgba(255, 62, 0, 0.1);
-    font-weight: 300;
-    padding: 0 1em;
-  }
-
-  ul {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* clearfix */
-  ul::after {
-    content: "";
-    display: block;
-    clear: both;
-  }
-
-  li {
-    display: block;
-    float: left;
-  }
-
-  [aria-current] {
-    position: relative;
-    display: inline-block;
-  }
-
-  [aria-current]::after {
-    position: absolute;
-    content: "";
-    width: calc(100% - 1em);
-    height: 2px;
-    background-color: rgb(255, 62, 0);
-    display: block;
-    bottom: -1px;
-  }
-
-  a {
-    text-decoration: none;
-    padding: 1em 0.5em;
-    display: block;
-  }
 </style>
