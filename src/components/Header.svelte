@@ -1,99 +1,109 @@
-<header class="Header">
-  <div class="Header-container">
-    <div class="Header-content">
-      <div class="Header-logo">
-        <h1>Marco Calzada</h1>
-        <span>Software Engineer</span>
-      </div>
-      <div class="Header-social">
-        <ul>
-          <li>
-            <a
-              href="https://github.com/mpcalzada"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="github-icon.png" alt="GitHub" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/mccalzada"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="twitter-icon.png" alt="Twitter" />
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/marco-polo-calzada-rodr%C3%ADguez-2b5954158"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="linkedin-icon.png" alt="LinkedIn" />
-            </a>
-          </li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="container">
+    <div class="navbar-brand">
+      <a id="pramuimge-logo" title="Pramukh IME" href="."
+        ><img
+          src="assets/images/logo_white.png"
+          alt="Pramukh IME home page"
+        /></a
+      >
+    </div>
+    <button
+      class="navbar-toggler collapsed"
+      type="button"
+      data-toggle="collapse"
+      data-target="#main-nav-1"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon" />
+    </button>
+    <div class="navbar-collapse collapse" id="main-nav-1">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="." title="Blog" class="nav-link"> Home </a>
+        </li>
+        <li class="nav-item">
+          <a href="about" title="Blog" class="nav-link"> About </a>
+        </li>
+        <li class="nav-item">
+          <a href="contact" title="Blog" class="nav-link"> Contact </a>
+        </li>
+        <li class="nav-item">
+          <a href="general" title="Blog" class="nav-link"> General </a>
+        </li>
+        <li class="nav-item">
+          <a rel="prefetch" href="blog" title="Blog" class="nav-link"> Blog </a>
+        </li>
+      </ul>
     </div>
   </div>
-</header>
+</nav>
+
+<nav>
+  <ul>
+    <li>
+      <a aria-current={segment === undefined ? "page" : undefined} href=".">
+        home
+      </a>
+    </li>
+    <li>
+      <a aria-current={segment === "about" ? "page" : undefined} href="about">
+        about
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={segment === "contact" ? "page" : undefined}
+        href="contact"
+      >
+        contact
+      </a>
+    </li>
+    <li>
+      <a
+        aria-current={segment === "general" ? "page" : undefined}
+        href="general"
+      >
+        general
+      </a>
+    </li>
+    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
+    <li>
+      <a
+        rel="prefetch"
+        aria-current={segment === "blog" ? "page" : undefined}
+        href="blog">blog</a
+      >
+    </li>
+  </ul>
+</nav>
 
 <style>
-  .Header {
-    background-color: #fafbfc;
-    color: #191a22;
-    padding: 1em 0 0 0;
+  .bg-dark {
+    background: #212121 !important;
   }
-
-  .Header-container {
-    display: grid;
-    grid-template-columns: minmax(auto, 1024px);
-    justify-content: center;
-    align-items: center;
-  }
-
-  .Header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .Header h1 {
-    color: #191a22;
+  .bg-dark h3 {
     font-size: 20px;
-    font-weight: 700;
-    letter-spacing: 0.8px;
-    cursor: pointer;
+    padding-bottom: 10px;
   }
-
-  .Header h1 span {
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .navbar-dark .navbar-brand {
+    padding: 10px 0px;
+  }
+  .dropdown-menu a {
+    color: #444;
+  }
+  .dropdown-menu a:hover {
+    background: transparent !important;
+  }
+  .dropdown:hover > .dropdown-menu {
     display: block;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: normal;
-    margin: 0.3em 0 0 0;
-  }
-
-  .Header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-
-  .Header li {
-    display: inline-block;
-    margin: 0 0.05 0 0;
-  }
-
-  .Header a {
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 14px;
-  }
-
-  .Header-social img {
-    width: 20px;
   }
 </style>
