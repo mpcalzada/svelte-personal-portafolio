@@ -3,20 +3,7 @@
 </script>
 
 <svelte:head>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="assets/css/LineIcons.css" />
-  <link rel="stylesheet" href="assets/css/animate.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
-  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
-  <link rel="stylesheet" href="assets/css/theme.css" />
 
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/popper.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/wow.min.js"></script>
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <script src="assets/js/custom.js"></script>
 </svelte:head>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -24,7 +11,7 @@
     <div class="navbar-brand">
       <a id="pramuimge-logo" title="Pramukh IME" href="."
         ><img
-          src="assets/images/logo_white.png"
+          src="assets/images/logo-mc.png"
           alt="Pramukh IME home page"
         /></a
       >
@@ -61,45 +48,30 @@
   </div>
 </nav>
 
-<nav>
-  <ul>
-    <li>
-      <a aria-current={segment === undefined ? "page" : undefined} href=".">
-        home
-      </a>
-    </li>
-    <li>
-      <a aria-current={segment === "about" ? "page" : undefined} href="about">
-        about
-      </a>
-    </li>
-    <li>
-      <a
-        aria-current={segment === "contact" ? "page" : undefined}
-        href="contact"
-      >
-        contact
-      </a>
-    </li>
-    <li>
-      <a
-        aria-current={segment === "general" ? "page" : undefined}
-        href="general"
-      >
-        general
-      </a>
-    </li>
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-    <li>
-      <a
-        rel="prefetch"
-        aria-current={segment === "blog" ? "page" : undefined}
-        href="blog">blog</a
-      >
-    </li>
-  </ul>
-</nav>
-
 <style>
+  .bg-dark {
+    background: #212121 !important;
+  }
+  .bg-dark h3 {
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  .navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .navbar-dark .navbar-brand {
+    padding: 10px 0px;
+  }
+  .dropdown-menu a {
+    color: #444;
+  }
+  .dropdown-menu a:hover {
+    background: transparent !important;
+  }
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
 </style>
