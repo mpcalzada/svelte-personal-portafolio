@@ -11,11 +11,16 @@
     <div class="navbar-brand">
       <a id="pramuimge-logo" title="Pramukh IME" href="."
         ><img
-          src="assets/images/logo-mc.png"
+          src="assets/images/logo_white.png"
           alt="Pramukh IME home page"
-        /></a
-      >
+        />
+      </a>
     </div>
+    <div class="Navbar-brand-description">
+      <p>Marco Calzada</p>
+      <span>Software Engineer</span>
+    </div>
+
     <button
       class="navbar-toggler collapsed"
       type="button"
@@ -73,5 +78,22 @@
   }
   .dropdown:hover > .dropdown-menu {
     display: block;
+  }
+
+  .Navbar-brand-description{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .Navbar-brand-description p{
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 0;
+  }
+
+  .Navbar-brand-description span{
+    color: white;
   }
 </style>
