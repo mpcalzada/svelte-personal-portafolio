@@ -10,8 +10,8 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <h1>About Us</h1>
-            <h5><a href="index.html">Home</a> / About Us</h5>
+            <h1>¿Marco Calzada?</h1>
+            <h5><a href="index.html">Inicio</a> / Acerca de mi</h5>
           </div>
         </div>
       </div>
@@ -26,9 +26,21 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-7 col-sm-7">
-            <h2 class="title wow animated fadeIn" data-wow-delay="1.0s">Building Tools of the Future</h2>
-            <p class="wow animated fadeIn" data-wow-delay="1.1s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin semper dui eu velit dignissim auctor eu ac nunc. Quisque lectus lectus, dictum egestas ligula quis, lacinia fringilla ligula. Donec eget vestibulum leo. Duis iaculis magna vitae purus tincidunt mollis. Vivamus laoreet dapibus vulputate. Curabitur erat odio, elementum aliquam efficitur in, mollis ut sem. </p>
-            <img src="assets/images/sign.png" alt="sign" class="img-fluid wow animated fadeIn" data-wow-delay="1.2s">
+            <h2 class="title wow animated fadeIn" data-wow-delay="1.0s">En resumen...</h2>
+            <div class="About-resume-description wow animated fadeIn" data-wow-delay="1.1s">
+              <ul>
+                <li>Ingeniero de software viviendo en <strong>Ciudad de México</strong></li>
+                <li><strong>Desde 2016</strong> me desempeño como ingeniero de software.</li>
+                <li>
+                  <strong>Backend developer</strong> por 2 años. <strong>Líder técnico</strong> por 2 años. <strong>Director de ingeniería</strong> desde 2020.
+                </li>
+                <li>¡Muuuy <strong>curioso</strong>!</li>
+                <li>Tomo y edito buenas <strong><a href="https://www.instagram.com/marco_ccalzada/" target="blank">fotografías</a></strong> con mi iPhone. Puro hobby.</li>
+                <li>Mis distros favoritas de <strong>linux</strong> son debian y fedora.</li>
+                <li>Puedes ver <a href="https://github.com/mpcalzada">aquí</a> algunos proyectos de <strong>freelance y mi startup</strong> fallida.</li>
+                <li></li>
+              </ul>
+            </div>
           </div>
           <div class="col-lg-5 col-sm-5">
             <img src="assets/images/about.png" alt="about" class="img-fluid wow animated fadeIn" data-wow-delay="0.5s">
